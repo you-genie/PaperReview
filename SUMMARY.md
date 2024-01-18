@@ -6,5 +6,5 @@
 
 ## NLP Tools
 
-* [API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs](nlp-tools/api-bank-a-comprehensive-benchmark-for-tool-augmented-llms.md)
+* [API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs](api-bank-a-comprehensive-benchmark-for-tool-augmented-llms.md)
 * [ToolLLM](nlp-tools/toolllm.md)

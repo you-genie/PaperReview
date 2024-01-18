@@ -57,7 +57,7 @@ tool-usage에 대한 user requirements를 얻기 위해 우선 예상 사용자�
 
 두 개의 기준축을 설정
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 (1) API pool
 
@@ -79,18 +79,18 @@ tool-usage에 대한 user requirements를 얻기 위해 우선 예상 사용자�
 
 이를 토대로 4개의 응답 방식이 나오게 되는데, 개발하다보면 few api상태에서는 1 call/turn이나 multiple calls/turn이나 비슷하다는 결론이 나와 그냥 묶어버림. 그리고 남은 세 가지 응답 방식을 define한다.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 (1) Call: \[query, \[api1, api2, ..., apiN]] -> apiK
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 * api목록은 주어진다 (위의 API Description).
 * 모델이 할 일은 api중 하나를 골라서 행동을 하는 것.
 
 (2) Retrieval+Call: \[query, ?] -> API
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 * api목록을 모델에게 알려주지 않음.
 * ToolSearcher라는 API에게 현재 필요한 API를 말하도록 함.
@@ -98,7 +98,7 @@ tool-usage에 대한 user requirements를 얻기 위해 우선 예상 사용자�
 
 (3) Plan+Retrieval+Call: \[query, ?] -> \[api1, api2, ..., apiN]
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 * 모델이 생성하는 중에 지속적으로 ToolSearcher를 사용할 수 있음.
 * 언제까지? 답변이 나올때까지
@@ -143,7 +143,7 @@ tool-usage에 대한 user requirements를 얻기 위해 우선 예상 사용자�
 * 게다가 100개의 API를 가지고 만들었는데, 이는 요구사항에는 조금 못 미치는 숫자
 * 따라서 multi-agent data generation을 통해 해당 과정을 automate
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 원래는 존재하는 LLM에게 위의 내용이 담긴 상세한 instruction을 준 다음 그대로 시행하도록 했는데, 아직은 공개모델이 그 정도 수준까지는 아니었다. (총 5%의 결과만 requirements를 통과함)
 
@@ -176,7 +176,7 @@ agent는 ChatGPT를 사용하였으며, row당 0.1$만으로 해결했다고 한
 * 2K Dialog
 * 6K turns(total)
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>API-Bank statistics.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>API-Bank statistics.</p></figcaption></figure>
 
 #### Quality?
 
@@ -186,7 +186,7 @@ agent는 ChatGPT를 사용하였으며, row당 0.1$만으로 해결했다고 한
 
 위의 multi-agent방식으로 튜닝한 모델(Lynx-7B)을 썼더니 다음과 같은 결과가 나옴
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Discussion
 
