@@ -57,7 +57,7 @@ tool-usage에 대한 user requirements를 얻기 위해 우선 예상 사용자�
 
 두 개의 기준축을 설정
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 (1) API pool
 
@@ -79,11 +79,11 @@ tool-usage에 대한 user requirements를 얻기 위해 우선 예상 사용자�
 
 이를 토대로 4개의 응답 방식이 나오게 되는데, 개발하다보면 few api상태에서는 1 call/turn이나 multiple calls/turn이나 비슷하다는 결론이 나와 그냥 묶어버림. 그리고 남은 세 가지 응답 방식을 define한다.
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 (1) Call: \[query, \[api1, api2, ..., apiN]] -> apiK
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 * api목록은 주어진다 (위의 API Description).
 * 모델이 할 일은 api중 하나를 골라서 행동을 하는 것.
@@ -176,7 +176,7 @@ agent는 ChatGPT를 사용하였으며, row당 0.1$만으로 해결했다고 한
 * 2K Dialog
 * 6K turns(total)
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>API-Bank statistics.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption><p>API-Bank statistics.</p></figcaption></figure>
 
 #### Quality?
 
@@ -186,7 +186,7 @@ agent는 ChatGPT를 사용하였으며, row당 0.1$만으로 해결했다고 한
 
 위의 multi-agent방식으로 튜닝한 모델(Lynx-7B)을 썼더니 다음과 같은 결과가 나옴
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Discussion
 
