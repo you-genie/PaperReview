@@ -46,7 +46,7 @@ MoE는 좋은 방식이지만 모델이 너무 크다. 게이트 감안해도 �
 
 ### LRU Caching
 
-<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 위의 이미지는 토큰에 따라 activate되는 expert와 LRU캐시를 가시화하고 있다. Layer 0을 보면 생각보다 많은 수의 expert가 cache hit인 것을 볼 수 있다. (layer 15의 의미는 잘 모르겠다)
 
@@ -79,7 +79,7 @@ Transformer가 이전 값들을 계속해서 활용한다는 것을 기반으로
 
 #### Quantization
 
-<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 * trade-off를 봐야 하기 때문에 다양한 setup을 테스트 진행
 * attention에 쓰이는 bit 수는 상대적으로 높게, expert bit 수는 상대적으로 낮게 설정해도 적절한 성능이 나왔음
@@ -90,7 +90,7 @@ Transformer가 이전 값들을 계속해서 활용한다는 것을 기반으로
 * LRU: 최적 cache-size 탐색
 * Speculative loading: 예측 수 & 얼마나 앞까지 봐도 괜찮은가
 
-<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 * 캐시 수는 많을수록 좋고, 최소 2개는 되어야 반은 간다
 * expert 수도 많을수록 좋지만, 생각보다 2-3개 차가 많지는 않아 보인다.
@@ -98,7 +98,7 @@ Transformer가 이전 값들을 계속해서 활용한다는 것을 기반으로
 
 ### Offload Performance
 
-<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 * T4 GPU(16GB, 코랩 무료버전이다) / RTX 3080 Mobile, RTX 3060(12GB) / A100-80GB
 * full algorithm일 때, 모든 세팅에서 2-4 token/sec 을 달성했다.

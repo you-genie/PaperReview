@@ -2,7 +2,6 @@
 
 * [Paper Study](README.md)
 * [KwaiAgents](kwaiagents.md)
-* [Fast Inference of Mixture-of-Experts Language Models with Offloading](fast-inference-of-mixture-of-experts-language-models-with-offloading.md)
 
 ## 🤖 Multimodal
 
@@ -11,6 +10,9 @@
 ## NLP
 
 * [LongLoRA: EFFICIENT FINE-TUNING OF LONG- CONTEXT LARGE LANGUAGE MODELS](nlp/longlora-efficient-fine-tuning-of-long-context-large-language-models.md)
+* [Fast Inference of Mixture-of-Experts Language Models with Offloading](nlp/fast-inference-of-mixture-of-experts-language-models-with-offloading.md)
+* [Memorizing Transformers](nlp/memorizing-transformers.md)
+* [LongLLaMA: Focused Transformer Training for Context Scaling](nlp/longllama-focused-transformer-training-for-context-scaling.md)
 
 ## NLP Tools
 

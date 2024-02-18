@@ -186,7 +186,7 @@ agent는 ChatGPT를 사용하였으며, row당 0.1$만으로 해결했다고 한
 
 위의 multi-agent방식으로 튜닝한 모델(Lynx-7B)을 썼더니 다음과 같은 결과가 나옴
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Discussion
 
