@@ -46,13 +46,13 @@ ChatGPT4는 대체 어떻게 이미지를 입력으로 받을 수 있었는가? 
 
 ## Evaluation
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 모델의 생성 능력은 어디에 가장 많이 영향을 받을까? 에 대한 실험으로 이미지 인코더를 함께 학습해 보았다(그 데이터로)
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 생성 능력(말의 길이 등)은 미니지피티(이미지를 쓰지 않았더라도!) 훨씬 좋았음을 알 수 있으며, 블립은 학습을 시켜도 그게 그거인걸 알 수 있다.
 

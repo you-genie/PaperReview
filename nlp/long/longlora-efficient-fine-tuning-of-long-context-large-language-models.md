@@ -33,11 +33,11 @@ description: https://arxiv.org/abs/2309.12307
 
 우선 다른 논문들과 비슷하게 긴 길이의 context를 여러 그룹으로 나눈 뒤, attention을 적용하는 방식을 쓴다. 이렇게 되면 한 임베딩이 찾게 되는 다른 임베딩의 크기가 현저히 줄어들기 때문에 연산량이 확 줄어든다.
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 오렌지색 부분이 activate되는 범위를 나타낸다. 그룹 간 attention이 수행되기 때문에, '보는 부분'만 계속 보게 된다. 이건 성능 하락으로 이어진다.
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 간단한 실험을 통해 확인한 결과. Full Attn의 경우 길이가 길더라도 모든 토큰을 다 보기 때문에 perplexity 값이 일관되어 있지만, Short Attn(위 위 그림에서 w/o shift)의 경우 보지 않는 토큰들이 영향을 크게 미쳐 perplexity 값이 올라가게 된다(낮을수록 좋음)
 
@@ -70,15 +70,15 @@ out = cat((out.chunk(2, 2)[0], out.chunk(2, 2)[1].roll(G/2, 1)), 2)
 
 아무래도 생성모델이다보니 그냥 perplexity를 기준 metric을 잡은 느낌.
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 ### Ablation Study: 다른 어텐션 기법과의 비교
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 어텐션 기법들을 가시화하면 다음과 같다.
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 우리 어텐션이 가장 perplexity에서 좋았다.
 
@@ -90,13 +90,13 @@ LoRA의 측면에서 진행한 실험.
 
 무조건 normalization을 해야 하고 임베딩은 무조건 학습에 넣어야 합니다.
 
-<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 ## Discussion
 
 학습할 때 배치를 엄청 넣을 수 있겠다!는 희망
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 문제는 코드를 직접 넣어야 한다는 것인데... 이게 설 전에 할 수 있으려나
 
