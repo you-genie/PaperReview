@@ -22,4 +22,5 @@
 * [Efficient LLM](nlp/efficient-llm/README.md)
   * [\[논문리뷰\] Fast Inference of Mixture-of-Experts Language Models with Offloading](nlp/efficient-llm/fast-inference-of-mixture-of-experts-language-models-with-offloading.md)
   * [\[논문리뷰\] GPTQ: ACCURATE POST-TRAINING QUANTIZATION FOR GENERATIVE PRE-TRAINED TRANSFORMERS](nlp/efficient-llm/gptq-accurate-post-training-quantization-for-generative-pre-trained-transformers.md)
-* [Benchmark](nlp/benchmark.md)
+* [Benchmark](nlp/benchmark/README.md)
+  * [MT-Bench](nlp/benchmark/mt-bench.md)

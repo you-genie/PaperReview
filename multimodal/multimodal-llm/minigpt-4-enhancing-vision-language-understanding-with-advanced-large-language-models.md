@@ -1,4 +1,4 @@
-# MINIGPT-4: ENHANCING VISION-LANGUAGE UNDERSTANDING WITH ADVANCED LARGE LANGUAGE MODELS
+# \[논문리뷰] MINIGPT-4: ENHANCING VISION-LANGUAGE UNDERSTANDING WITH ADVANCED LARGE LANGUAGE MODELS
 
 ## Description
 
@@ -19,7 +19,7 @@ ChatGPT4는 대체 어떻게 이미지를 입력으로 받을 수 있었는가? 
 
 ## Method
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 진짜 '약간의' 레이어만을 사용했는데, 저 Linear Layer는 **고작 한 개의 projection layer**이다.
 
