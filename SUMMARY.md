@@ -19,6 +19,8 @@
   * [\[논문리뷰\] LongLoRA: EFFICIENT FINE-TUNING OF LONG- CONTEXT LARGE LANGUAGE MODELS](nlp/long/longlora-efficient-fine-tuning-of-long-context-large-language-models.md)
   * [\[논문리뷰\] Memorizing Transformers](nlp/long/memorizing-transformers.md)
   * [\[논문리뷰\] LongLLaMA: Focused Transformer Training for Context Scaling](nlp/long/longllama-focused-transformer-training-for-context-scaling.md)
+  * [\[논문리뷰\] Ring Attention with Blockwise Transformers for Near-Infinite Context](nlp/long/ring-attention-with-blockwise-transformers-for-near-infinite-context.md)
+  * [Rotary Position Embedding (RoPE)](nlp/long/rotary-position-embedding-rope.md)
 * [Efficient LLM](nlp/efficient-llm/README.md)
   * [\[논문리뷰\] Fast Inference of Mixture-of-Experts Language Models with Offloading](nlp/efficient-llm/fast-inference-of-mixture-of-experts-language-models-with-offloading.md)
   * [\[논문리뷰\] GPTQ: ACCURATE POST-TRAINING QUANTIZATION FOR GENERATIVE PRE-TRAINED TRANSFORMERS](nlp/efficient-llm/gptq-accurate-post-training-quantization-for-generative-pre-trained-transformers.md)
