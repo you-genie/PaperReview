@@ -46,7 +46,7 @@ CrossBatch training은 모델이 (k, v)에 대해 더 잘 배우도록 돕는다
 
 [memorizing-transformers.md](memorizing-transformers.md "mention") (ICLR 22, spotlight) 라는 논문에서 주로 아이디어를 가져왔다고 한다.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Memorizing Transformers architecture. kNN idea came from this</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Memorizing Transformers architecture. kNN idea came from this</p></figcaption></figure>
 
 * 각 레이어의 query가 가장 잘 매치된 top-k key를 가져온다.
   * 가져오는 방식이 kNN (FAISS꺼를 가져왔다)
