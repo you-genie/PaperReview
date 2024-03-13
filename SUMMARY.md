@@ -13,6 +13,7 @@
 * [Tools](nlp/tools/README.md)
   * [\[논문리뷰\] API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs](nlp/tools/api-bank-a-comprehensive-benchmark-for-tool-augmented-llms.md)
   * [\[논문리뷰\] ToolLLM](nlp/tools/toolllm.md)
+  * [LLMs in the Imaginarium: Tool Learning through Simulated Trial and Error](nlp/tools/llms-in-the-imaginarium-tool-learning-through-simulated-trial-and-error.md)
 * [Agents](nlp/agents/README.md)
   * [\[논문리뷰\] KwaiAgents](nlp/agents/kwaiagents.md)
 * [Long](nlp/long/README.md)
